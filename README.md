@@ -1,3 +1,3 @@
 # nginx-windows-service-installer
 
-Lightweight installer that sets up Nginx as a Windows service.
+Lightweight installer that sets up nginx as a Windows service.
