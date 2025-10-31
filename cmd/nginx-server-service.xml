@@ -1,0 +1,17 @@
+<service>
+  <id>nginx_server</id>
+  <name>nginx server</name>
+  <description>nginx server</description>
+  <executable>{app}\nginx\nginx.exe</executable>
+  <workingdirectory>{app}\nginx</workingdirectory>
+  <priority>Normal</priority>
+  <stoptimeout>15</stoptimeout>
+  <stopexecutable>{app}\nginx\nginx.exe</stopexecutable>
+  <stoparguments>-s stop</stoparguments>
+  <startmode>Automatic</startmode>
+  <logpath>{app}\nginx\logs</logpath>
+  <log mode="roll-by-size">
+    <sizeThreshold>10485760</sizeThreshold>
+    <keepFiles>5</keepFiles>
+  </log>
+</service>
